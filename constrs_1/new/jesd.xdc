@@ -1,0 +1,40 @@
+
+#set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins jesd204b/inst/sub/clock/clk_wiz/inst/plle4_adv_inst/CLKOUT0]]
+
+
+#set_property DIRECTION OUT [get_ports {txn_out[7]}]
+#set_property DIRECTION OUT [get_ports {txn_out[6]}]
+#set_property DIRECTION OUT [get_ports {txn_out[5]}]
+#set_property DIRECTION OUT [get_ports {txn_out[4]}]
+#set_property DIRECTION OUT [get_ports {txn_out[3]}]
+#set_property DIRECTION OUT [get_ports {txn_out[2]}]
+#set_property DIRECTION OUT [get_ports {txn_out[1]}]
+#set_property DIRECTION OUT [get_ports {txn_out[0]}]
+#set_property DIRECTION IN [get_ports {rxn_in[7]}]
+#set_property DIRECTION IN [get_ports {rxn_in[6]}]
+#set_property DIRECTION IN [get_ports {rxn_in[5]}]
+#set_property DIRECTION IN [get_ports {rxn_in[4]}]
+#set_property DIRECTION IN [get_ports {rxn_in[3]}]
+#set_property DIRECTION IN [get_ports {rxn_in[2]}]
+#set_property DIRECTION IN [get_ports {rxn_in[1]}]
+#set_property DIRECTION IN [get_ports {rxn_in[0]}]
+#set_property DIRECTION OUT [get_ports {txp_out[7]}]
+#set_property DIRECTION OUT [get_ports {txp_out[6]}]
+#set_property DIRECTION OUT [get_ports {txp_out[5]}]
+#set_property DIRECTION OUT [get_ports {txp_out[4]}]
+#set_property DIRECTION OUT [get_ports {txp_out[3]}]
+#set_property DIRECTION OUT [get_ports {txp_out[2]}]
+#set_property DIRECTION OUT [get_ports {txp_out[1]}]
+#set_property DIRECTION OUT [get_ports {txp_out[0]}]
+#set_property DIRECTION IN [get_ports {rxp_in[7]}]
+#set_property DIRECTION IN [get_ports {rxp_in[6]}]
+#set_property DIRECTION IN [get_ports {rxp_in[5]}]
+#set_property DIRECTION IN [get_ports {rxp_in[4]}]
+#set_property DIRECTION IN [get_ports {rxp_in[3]}]
+#set_property DIRECTION IN [get_ports {rxp_in[2]}]
+#set_property DIRECTION IN [get_ports {rxp_in[1]}]
+#set_property DIRECTION IN [get_ports {rxp_in[0]}]
+
+
+
+

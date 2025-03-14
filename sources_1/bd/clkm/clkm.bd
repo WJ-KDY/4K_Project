@@ -1,0 +1,125 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFA81CC33F38F1ECD",
+      "device": "xcku15p-ffve1517-3-e",
+      "gen_directory": "../../../../VXONE_V01.gen/sources_1/bd/clkm",
+      "name": "clkm",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "clk_wiz_0": ""
+    },
+    "ports": {
+      "clk_in1": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "220000000"
+          }
+        }
+      },
+      "clk_out1": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "clk_out2": {
+        "type": "clk",
+        "direction": "O"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "clkm_clk_wiz_0_0",
+        "xci_path": "ip\\clkm_clk_wiz_0_0\\clkm_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "45.449999999999996"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "106.000"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "85.008"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "110"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "92.635"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "85.008"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "220"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "5.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "4.545"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "5"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "OPTIMIZE_CLOCKING_STRUCTURE_EN": {
+            "value": "true"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "220"
+          },
+          "PRIM_SOURCE": {
+            "value": "No_buffer"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_in1_1": {
+        "ports": [
+          "clk_in1",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "clk_out1"
+        ]
+      },
+      "clk_wiz_0_clk_out2": {
+        "ports": [
+          "clk_wiz_0/clk_out2",
+          "clk_out2"
+        ]
+      }
+    }
+  }
+}
